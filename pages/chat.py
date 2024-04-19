@@ -23,7 +23,7 @@ model = genai.GenerativeModel('gemini-pro')
 st.set_page_config(
     page_title="CSV Analysis APP",
     page_icon="〽️",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="collapsed",
 )
 
