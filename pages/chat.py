@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import json, csv
 #from keys import myKey
+myKey=st.secrets["myKey"]
 import google.generativeai as genai 
 
 import pathlib
