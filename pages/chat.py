@@ -27,6 +27,14 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+#To hide hamburger menu
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 df = pd.read_csv('tmpdataset.csv')
 
 def csv_to_json(csv_file):
