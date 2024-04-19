@@ -1,0 +1,8 @@
+# these packages are required to run this app(csvAsk)
+
+pandas
+numpy
+google-generativeai
+matplotlib
+IPython
+streamlit
