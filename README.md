@@ -1,6 +1,6 @@
-csvAsk〽️
+# csvAsk〽️[Click me to use](https://csvask.streamlit.app/)
 
-An application that can perform statistical analysis of CSV files.
+An application that can perform statistical analysis on CSV files.
 
 Tasks it performs:
 
@@ -17,8 +17,7 @@ Tasks it performs:
 
 Just upload CSV files and see the magic〽️.
 
-
-Technologies I’ve used:
+# Technologies I’ve used:
 
   •	Python
 
@@ -32,4 +31,35 @@ Technologies I’ve used:
 
   •	Gemini AI by Google DeepMind (LLM)
 
-  •	Ploomber (Deploy)
+
+## Installation
+Folk this repo to modify it.
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the dependencies for this project.
+
+```bash
+pip install -r requirements.txt
+
+```
+
+## Usage
+
+
+```bash
+pip install streamlit run .\home.py        
+
+```
+This will run the app on your default browser.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+## Author
+Shashank Kothari
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
