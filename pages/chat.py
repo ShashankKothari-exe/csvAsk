@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import json, csv
-from keys import myKey
+#from keys import myKey
 import google.generativeai as genai 
 
 import pathlib
