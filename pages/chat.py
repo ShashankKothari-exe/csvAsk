@@ -24,7 +24,7 @@ st.set_page_config(
     page_title="CSV Analysis APP",
     page_icon="〽️",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 df = pd.read_csv('tmpdataset.csv')
