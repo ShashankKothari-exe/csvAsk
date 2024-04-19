@@ -15,66 +15,11 @@ st.set_page_config(
 
 #To hide hamburger menu
 hide_streamlit_style = """
-
-
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-          margin: 0;
-        }
-
-        .wrapper {
-          position: relative;
-          z-index: 1;
-          display: inline-block;
-          width: 100vw;
-        }
-
-        .hidefooter {
-          position: absolute;
-          width: 150px;
-          height: 35px;
-          background: rgb(242,240,246);
-          right: 0px;
-          bottom: 0px;
-          z-index: 2;
-          display: block;
-          color: rgb(0, 0, 0);
-        }
-    
-        iframe {
-          display: block;
-          background: #ffffff;
-          border: none;
-          height: 99vh;
-          width: 99vw;
-        }
-        #MainMenu {visibility: hidden;}
-        </style>    
-
-</head>
-<body>
-  <div class="wrapper">
-    <div class="hidefooter"></div>
-    <iframe src="https://<<your.app.URL>>/?embed=true">
-        <p>Your browser doesn't support iframes</p>
-    </iframe>
-    </div>
-</body>
-</html>
-            
+            <style>
+            #MainMenu {visibility: hidden;}
+            </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-
-
-
-
-
-
-
-
 
 
 
