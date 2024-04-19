@@ -31,33 +31,43 @@ except:
     df.to_csv('tmpdataset.csv', index=False)
 finally:
     ""   
+def showStats():
+    st.write('Mean:')
+    st.write(df.mean())
+    st.write('\nMedian:')
+    st.write(df.median())
+    st.write('Mode:')
+    st.write(df.mode(axis='columns', numeric_only=True))
+    st.write('\nStandard Deviation:')
+    st.write(df.std())
+    st.write('\ncorrelation coefficient:')
+    st.write(df.corr())
+    st.write('\ncorvariance:')
+    st.write(df.cov())
 
-dsstr+' Dataset:'
-st.dataframe(df.style.highlight_max(axis=0))
-
-st.write('Mean:')
-st.write(df.mean())
-st.write('\nMedian:')
-st.write(df.median())
-st.write('Mode:')
-st.write(df.mode(axis='columns', numeric_only=True))
-st.write('\nStandard Deviation:')
-st.write(df.std())
-st.write('\ncorrelation coefficient:')
-st.write(df.corr())
-st.write('\ncorvariance:')
-st.write(df.cov())
-
-st.line_chart(df)
-df.plot.scatter(x=list(df)[0], y=list(df)[1], title='Scatter Plot')
-st.scatter_chart(
+    st.line_chart(df)
+    df.plot.scatter(x=list(df)[0], y=list(df)[1], title='Scatter Plot')
+    st.scatter_chart(
     df,
     x=list(df)[0],
     y=list(df)[1],
-)
+    )
 
-st.bar_chart(df)
-fig, ax = plt.subplots()
-ax.hist(df, bins=20)
-st.pyplot(fig)
+    st.bar_chart(df)
+    fig, ax = plt.subplots()
+    ax.hist(df, bins=20)
+    st.pyplot(fig)
 
+def defaultMsg():
+    st.write("Go to the chat section to ask questions about your data.")
+    df.shape
+
+
+dsstr+' Dataset:'
+st.dataframe(df.style.highlight_max(axis=0))
+try:
+    showStats()
+except:
+    ''
+finally:
+    defaultMsg()
