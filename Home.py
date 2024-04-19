@@ -8,7 +8,7 @@ import pandas as pd
 
 st.set_page_config(
     page_title="CSV Analysis APP",
-    page_icon="🧊",
+    page_icon="〽️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -71,3 +71,7 @@ except:
     ''
 finally:
     defaultMsg()
+    " "
+    " "
+    "Link to this project on my GitHub:"
+    st.page_link("https://github.com/ShashankKothari-exe/csvAsk", label="csvAsk", icon="〽️")
