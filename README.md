@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 
 ```bash
-pip install streamlit run .\home.py        
+pip streamlit run .\home.py        
 
 ```
 This will run the app on your default browser.
