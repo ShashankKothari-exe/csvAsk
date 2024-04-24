@@ -58,5 +58,8 @@ submit = chatForm.form_submit_button(f'Search')
 if submit:
     dson=csv_to_json("tmpdataset.csv")
     chat = model.start_chat(history=[])
-    response = chat.send_message(dson+" "+query)
+    try:
+        response = chat.send_message(dson+" "+query)
+    except:
+        response = "Sorry I cannot respond to that.\nTry to upload a structured file"    
     st.write(response.text)
