@@ -60,6 +60,7 @@ if submit:
     chat = model.start_chat(history=[])
     try:
         response = chat.send_message(dson+" "+query)
+        st.write(response.text)
     except:
         response = "Sorry I cannot respond to that.\nTry to upload a structured file"    
-    st.write(response.text)
+        st.write(response)
